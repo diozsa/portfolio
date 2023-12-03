@@ -1,20 +1,9 @@
 ---
----
+import BaseLayout from '../layouts/BaseLayout.astro';
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Dan Iozsa - About</title>
-  </head>
-  <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/portfolio/">Portfolio</a>
-    <h1>About Me</h1>
-    <p>Software engineer with background in electrical engineer.</p>
-    <p>Love for nature and motorcycling</p>
-  </body>
-</html>
+const pageTitle = "About Me";
+---
+<BaseLayout pageTitle={pageTitle}>
+  <p>Software engineer with background in electrical engineer.</p>
+  <p>Love for nature and motorcycling</p>
+</BaseLayout>
