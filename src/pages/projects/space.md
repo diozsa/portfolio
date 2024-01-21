@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'NASA SpaceEx App'
+title: 'NASA Space Exploration App'
 pubDate: 2023-08-17
 description: 'A tool to discover and explore The Space.'
 author: 'Daniel Iozsa'
@@ -10,7 +10,7 @@ image:
 tags: ["astro", "nasa", "space", "app", "python"]
 ---
 
-Welcome to my Weather App, a web-application that keeps you up to date with the weather conditions from multiple locations.
+Welcome to my Space App.
 
 ## What I've accomplished
 

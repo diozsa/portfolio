@@ -6,7 +6,11 @@ const pageTitle = "My Projects";
 <BaseLayout pageTitle={pageTitle}>
       <p>Check out my projects and feel free to use them</p>
     <ul>
-      {allProjects.map((proj) => <li><a href={proj.url}>{proj.frontmatter.title}</a></li>)}
+      {allProjects.map((proj) => <li>
+                                    <a href={proj.url}>
+                                      <img src={proj.frontmatter.image.url} alt="Weather App Logo">{proj.frontmatter.title}
+                                    </a>
+                                 </li>)}
       
       <!--
         <li><a href="/projects/weather/">Weather App</a></li>
