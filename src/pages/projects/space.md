@@ -1,25 +1,32 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'NASA Space Exploration App'
-pubDate: 2023-08-17
-description: 'A tool to discover and explore The Space.'
+pubDate: 2023-08-18
+description: 'A visual tool for exploring The Space.'
 author: 'Daniel Iozsa'
 image:
-    url: 'https://docs.astro.build/assets/full-logo-light.png'
+    url: '../../../public/favicon.svg'
     alt: 'The full Astro logo.'
 tags: ["astro", "nasa", "space", "app", "python"]
 ---
 
-Welcome to my Space App.
+## Welcome to my Space App!
 
-## What I've accomplished
+**Objective**:
+Provide users with a visually engaging experience, allowing simple searches to yield stunning photos from NASA's public APIs
 
-1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
+**Features**:
+- Full stack multipage application
+- Includes NASA images, APOD, Perseverance Rover and Image Collection, utilizing 3 different APIs
+- User authentication and authorization
+- Allows users to save and manage their image collections
 
-2. **Making Pages**: I then learned how to make pages by creating new `.astro` files and placing them in the `src/pages/` folder.
+**Technology**: 
+- Backend: Python with Flask, SQLAlchemy for PostgreSQL
+- Frontend: Server-rendered using Jinja2 templating, Bootstrap and HTML
+- Security: bCrypt, WTForms, CSRF Token
 
-3. **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
 
-## What's next
+[<button style="padding: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;">Click me</button>](https://example.com)
 
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+

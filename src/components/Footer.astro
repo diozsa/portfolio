@@ -2,17 +2,19 @@
 import Social from "./Social.astro";
 ---
 
-<style>
-  footer {
-    display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-</style>
+
 
 <footer>
-  Learn more about my projects on 
+  Let's connect!  
   <Social platform="github" username="diozsa" />
   <Social platform="linkedin" username="/in/diozsa" />
+  <div>&copy; <span id="copyrightYear"></span> Dan Iozsa. All rights reserved.</div>
+
+
 
 </footer>
+
+<script>
+  // Get current year and update the copyright year in the footer
+  document.getElementById('copyrightYear').innerText = new Date().getFullYear().toString();
+</script>

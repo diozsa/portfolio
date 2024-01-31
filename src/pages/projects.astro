@@ -1,21 +1,28 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Social from "../components/Social.astro";
+
 const allProjects = await Astro.glob('../pages/projects/*.md');
-const pageTitle = "My Projects";
+const pageTitle = "Code  Vault";
 ---
 <BaseLayout pageTitle={pageTitle}>
-      <p>Check out my projects and feel free to use them</p>
-    <ul>
-      {allProjects.map((proj) => <li>
+  <p>
+    Explore my deployed projects - a collection of applications crafted for both utility and enjoyment.
+    These are not just creations; They're tools that I regularly utilize. Feel free to experiment with them and delve into the code on GitHub.
+  </p>
+  <ul>
+      {allProjects.map((proj) => <h2>
+                                    {proj.frontmatter.title}
                                     <a href={proj.url}>
-                                      <img src={proj.frontmatter.image.url} alt="Weather App Logo">{proj.frontmatter.title}
+                                      <img src={proj.frontmatter.image.url} alt="Weather App Logo">
                                     </a>
-                                 </li>)}
+                                 </h2>)
+                                }
       
       <!--
         <li><a href="/projects/weather/">Weather App</a></li>
         <li><a href="/projects/space/">NASA SpaceEx App</a></li>
       -->
-    </ul>
+  </ul>
 </BaseLayout>
 

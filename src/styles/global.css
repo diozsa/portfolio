@@ -12,12 +12,33 @@ html.dark {
   color: #fff;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* max-width: 1500px; */
+  background-color: #264b9b;
+  padding: 10px;
+  text-align: center;
+  z-index: 1000;  
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+
   margin: 0 auto;
   width: 100%;
-  max-width: 80ch;
+  min-height: 100vh;
+  max-width: 100ch;
   padding: 1rem;
   line-height: 1.5;
+}
+
+main {
+  flex: 1;
+  margin-top: 5rem;
 }
 
 * {
@@ -46,7 +67,7 @@ h1 {
 }
 
 nav {
-  margin: 2rem 0;
+  margin: 0.1rem 0;
 }
 
 .nav-links {
@@ -94,3 +115,14 @@ nav {
       display: none;
     }
 }
+
+footer {
+  background-color: #264b9b;
+  padding: 10px;
+  text-align: center;
+
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+  
