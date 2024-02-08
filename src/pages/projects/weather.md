@@ -1,20 +1,21 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Weather App'
-pubDate: 2023-08-17
+pubDate: 2023-04-03
 description: 'A weather service application like no other.'
 author: 'Daniel Iozsa'
 image:
-    url: 'https://docs.astro.build/assets/full-logo-light.png'
-    alt: 'The full Astro logo.'
+    url: '../../../src/static/weather.jpg'
+    alt: 'Homepage image for Weather App.'
 tags: ["astro", "weather", "app", "react"]
+url: 'https://iozsa-weather.surge.sh/'
 ---
 
 
 ## Weather App
 
 **Objective**:
-- Provides weather forecast that keeps user up to date with the weather conditions from multiple locations.
+- Provides weather forecast that keeps user up to date with the weather conditions from multiple locations and weather allerts if present.
 
 **Features**:
 - Full stack single application
