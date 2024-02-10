@@ -8,19 +8,19 @@ const pageTitle = "The Vault";
 <BaseLayout pageTitle={pageTitle}>
   <p>
     Explore my deployed projects - a collection of applications crafted for both utility and enjoyment.
-    These are not just creations; They're tools that I regularly utilize. Feel free to experiment with them and delve into the code on GitHub.
+    Feel free to experiment with them and delve into the code on GitHub.
   </p>
   <div class="project-container">
       {allProjects.map((proj) => (
-        <div>
+        <div class="project">
           <h2>{proj.frontmatter.title}</h2>
           <h3>{proj.frontmatter.description}</h3>
           <p>
             <a href={proj.frontmatter.url}>
               <img src={proj.frontmatter.image.url} alt={proj.frontmatter.image.alt}>
             </a>
-            <a href={proj.url} target="_blank" style="padding: 10px;  background-color: #4CAF50; color: white; border: none;
-            border-radius: 4px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 2em auto; cursor: pointer;">More info</a>
+            <a href={proj.url} style="padding: 10px;  background-color: #4CAF50; color: white; border: none;
+            border-radius: 4px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 2em auto; cursor: pointer;">Dive Deeper</a>
 
           </p>
         </div>

@@ -6,6 +6,9 @@ const { frontmatter } = Astro.props;
 <BaseLayout pageTitle={frontmatter.title}>
 <!-- <p>Written by {frontmatter.author}</p> -->
 <!-- <p>{frontmatter.description}</p> -->
+<h3>Inside the App: A Closer Look</h3>
 <slot />
+<a href={frontmatter.github} target="_blank" style="padding: 10px;  background-color: #4CAF50; color: white; border: none;
+            border-radius: 4px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 2em auto; cursor: pointer;">Source Code</a>
 </BaseLayout>
 

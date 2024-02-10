@@ -4,8 +4,9 @@ html {
 }
 
 html.dark {
-  background-color: #0d0950;
-  color: #fff;
+  background-color: #141422;
+  color: #b4b4c5;
+
 }
 
 .dark .nav-links a {
@@ -18,7 +19,7 @@ header {
   left: 0;
   width: 100%;
   /* max-width: 1500px; */
-  background-color: #264b9b;
+  background-color: #282846;
   padding: 10px;
   text-align: center;
   z-index: 1000;  
@@ -27,12 +28,12 @@ header {
 body {
   display: flex;
   flex-direction: column;
-
+  border: 1px solid;
   margin: 0 auto;
   width: 100%;
   min-height: 100vh;
-  max-width: 100ch;
-  padding: 1rem;
+  max-width: 120ch;
+  padding: 3rem;
   line-height: 1.5;
   justify-content: center;
     /* Center the content vertically */
@@ -50,16 +51,23 @@ main {
 }
 
 h1 {
-  margin: 1rem 0;
+  /* margin: 1rem 0; */
   padding-left: 2rem;
   font-size: 2.5rem;
-    /* text-align: center; */
+    text-align: center;
 }
 
-/* .project-container {
-  text-align: center;
-} */
+.project {
+  margin-top: 30px;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 3rem;
+    background-color: #4A4E69;
+}
 
+.project-container {
+  margin-top: 2rem;
+}
 .project-container img {
   max-width: 100%;
   /* Ensure the image doesn't exceed the container width */
@@ -86,9 +94,9 @@ h1 {
   background-color: #ff9776;
 }
 
-nav {
+/* nav {
   margin: 0.1rem 0;
-}
+} */
 
 .nav-links {
   width: 100%;
@@ -106,7 +114,6 @@ nav {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
-  /* text-transform: uppercase; */
 }
 
 .nav-links a:hover,
@@ -137,8 +144,10 @@ nav {
 }
 
 footer {
-  background-color: #264b9b;
+  /* background-color: #264b9b; */
   padding: 10px;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 
   width:100%;

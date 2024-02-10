@@ -5,14 +5,15 @@ pubDate: 2023-04-03
 description: 'A weather service application like no other.'
 author: 'Daniel Iozsa'
 image:
-    url: '../../../src/static/weather.jpg'
+    url: '/src/static/images/weather.jpg'
     alt: 'Homepage image for Weather App.'
 tags: ["astro", "weather", "app", "react"]
 url: 'https://iozsa-weather.surge.sh/'
+github: 'https://github.com/diozsa/Capstone2-weather-app'
 ---
 
 
-## Weather App
+<!-- ## Weather App -->
 
 **Objective**:
 - Provides weather forecast that keeps user up to date with the weather conditions from multiple locations and weather allerts if present.
