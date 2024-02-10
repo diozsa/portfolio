@@ -5,7 +5,7 @@ pubDate: 2023-04-03
 description: 'A weather service application like no other.'
 author: 'Daniel Iozsa'
 image:
-    url: '/src/static/images/weather.jpg'
+    url: '/src/weather.jpg'
     alt: 'Homepage image for Weather App.'
 tags: ["astro", "weather", "app", "react"]
 url: 'https://iozsa-weather.surge.sh/'

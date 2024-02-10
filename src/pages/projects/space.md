@@ -5,7 +5,7 @@ pubDate: 2022-09-22
 description: 'A visual tool for exploring The Space.'
 author: 'Daniel Iozsa'
 image:
-    url: '/src/static/images/space.jpg'
+    url: '/src/space.jpg'
     alt: 'Homepage image for Space App.'
 tags: ["astro", "nasa", "space", "app", "python"]
 url: 'https://iozsa-space-app.herokuapp.com/'
