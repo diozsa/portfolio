@@ -5,7 +5,8 @@ pubDate: 2023-04-03
 description: 'A weather service application like no other.'
 author: 'Daniel Iozsa'
 image:
-    url: '/src/weather.jpg'
+    # url: '/src/static/images/weather.jpg'
+    url: '/weather.jpg'
     alt: 'Homepage image for Weather App.'
 tags: ["astro", "weather", "app", "react"]
 url: 'https://iozsa-weather.surge.sh/'
@@ -29,4 +30,4 @@ github: 'https://github.com/diozsa/Capstone2-weather-app'
 **Technology**: 
 - Backend: Built with Node.js, Express.js, and PostgreSQL
 - Frontend: React, responsive design with React Bootstrap
-- Security: JSON schema and form data validations, JWT, bcrypt, auth persistence with localStorage
+- Security: JSON schema / form data validations, JWT, bcrypt, auth persistence with localStorage

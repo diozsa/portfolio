@@ -5,7 +5,26 @@ const pageTitle = "Site info";
 ---
 <BaseLayout pageTitle={pageTitle}>
   <p>
-    Here you have an overengineered website built with Astro web framework.
+    <br>
+    What we have here is an overengineered website built with
+    <a href="https://astro.build/" target="_blank" style="text-decoration: none; color: rgb(136, 64, 64)">Astro.build </a> web framework.
+    Astro's static site generator allowed me to use a component based approach for rendering webpages.
+    <br>
+    <h3> Tech Stack</h3>
+    <p>
+      The source code is composed of JSX-like components (HTML, CSS and JavaScript) and markdown files. Astro does the magic behind the scene
+      through a process called hydration, transforming these components and markdown files into static HTML at build time.
+      It also provides data binding capabilities, allowing to pass data (props) from the JSX-like components to markdown files and vice versa.
+    </p>
+    <h3>Continuous Deployment</h3>
+    <p>
+      This site's GitHub repo is connected to a hosting service via continuous integration. When a change is detected on the repo's master branch,
+      GitHub sends a webhook payload to the host provider. This in turn triggers a new build process for the website.
+      Once the build process completes successfully, the built assets are deployed to a CDN, then the live version of the website is updated automatically
+      with the newly built assets.
+    </p>
   </p>
+  <a href="https://github.com/diozsa/portfolio" target="_blank" style="padding: 10px;  background-color: #4CAF50; color: white; border: none;
+            border-radius: 4px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 2em auto; cursor: pointer;">Source Code</a>
 
 </BaseLayout>
