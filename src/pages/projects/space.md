@@ -16,7 +16,8 @@ github: 'https://github.com/diozsa/Capstone1-Space-app'
 <!-- ## Welcome to my Space App! -->
 
 **Objective**:
-- Provide users with a visually engaging experience, allowing simple searches to yield stunning photos from NASA's public APIs
+- Provides users with a visually engaging experience, allowing simple searches to yield
+stunning photos from NASA's public APIs.
 
 **Features**:
 - Full stack multipage application

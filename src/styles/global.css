@@ -1,5 +1,5 @@
 html {
-  background-color: #f1f5f9;
+  background-color: #F2E9E4;
   /* font-family: sans-serif; */
   font-family: 'Raleway Variable', sans-serif;
 }
@@ -10,8 +10,20 @@ html.dark {
 
 }
 
+html.dark header {
+  background-color: #282846;
+}
+
+html.dark .project {
+  background-color: #4A4E69;
+}
+
 .dark .nav-links a {
   color: #9A8C98;
+}
+
+.nav-links a {
+  color: #141422;
 }
 
 header {
@@ -19,8 +31,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  /* max-width: 1500px; */
-  background-color: #282846;
+  background-color: #b4b4c5;
   padding: 5px;
   text-align: center;
   z-index: 1000;  
@@ -46,6 +57,12 @@ body {
     align-items: center;
     /* Center the content horizontally */
 }
+
+/* a {
+  color: #007bff;
+} */
+
+
 .info {
   padding-left: 7rem;
     padding-right: 7rem;
@@ -60,24 +77,48 @@ main {
   box-sizing: border-box;
 }
 
-.link-button {
-  padding: 10px;  background-color: #C9ADA7; color: #22223B; border: 1px solid;
-   border-radius: 4px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 2em auto;
-    cursor: pointer;
-    
+.github-button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2em auto;
+  cursor: pointer;
 }
 
-
 h1 {
-  /* margin: 1rem 0; */
-  padding-left: 2rem;
   font-size: 2.5rem;
-    text-align: center;
+  text-align: center;
+}
+
+.index-page-container {
+  display: flex;
+  align-items: flex-start;
+  /* Align items to the start */
+  margin-bottom: 1rem;
+  /* Remove margin-bottom */
+  /* padding-left: 0; */
+  /* Remove left padding */
+  /* padding-right: 0; */
+  /* Remove right padding */
+}
+
+.project-container {
+  margin-top: 2rem;
+}
+
+.project-container img {
+  max-width: 100%;
+  /* Ensure the image doesn't exceed the container width */
+  height: auto;
+  /* Maintain the aspect ratio of the image */
+  display: block;
+  margin: 0 auto;
 }
 
 .project {
@@ -87,23 +128,26 @@ h1 {
   padding: 2rem;
   padding-left: 5rem;
   padding-right: 5rem;
-    background-color: #4A4E69;
+  background-color: #d3d0d2;
+  transition: transform 0.3s ease;
+}
+.project:hover {
+  transform: scale(1.01);
 }
 
-.project-container {
-  margin-top: 2rem;
+.link-button {
+  font-size: 0.8rem;
+  padding: 10px;
+  background-color: #C9ADA7;
+  color: #22223B;
+  border: 1px solid;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2em auto;
+  cursor: pointer;
 }
-.project-container img {
-  max-width: 100%;
-  /* Ensure the image doesn't exceed the container width */
-  height: auto;
-  /* Maintain the aspect ratio of the image */
-  display: block;
-  /* Remove extra space below the image */
-  margin: 0 auto;
-  /* Center the image horizontally */
-}
-
 /* nav styles */
 
 .hamburger {
@@ -126,7 +170,6 @@ h1 {
 .nav-links {
   width: 100%;
   top: 5rem;
-  /* left: 48px; */
   background-color: #ff9776;
   display:none;
   margin: 0;
@@ -149,6 +192,25 @@ h1 {
 .expanded {
   display: unset;
 }
+.profile-img {
+  width: 25%;
+  margin-right: 5rem;
+  border: 1px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+  .index-page-container {
+    flex-direction: column;
+  }
+
+  .profile-img {
+    width: 50%;
+    margin-right: 0;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+}
 
 @media screen and (min-width: 636px) {
   .nav-links {
@@ -168,12 +230,24 @@ h1 {
     }
 }
 
+@media screen and (max-width: 690px) {
+  * {
+    box-sizing: content-box;
+    /* Reset box-sizing property */
+  }
+  .link-button {
+    font-size: 0.5rem;
+  }
+  .project {
+    margin-top: 30px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 footer {
-  /* background-color: #264b9b; */
-  /* padding: 10px; */
   justify-content: center;
   align-items: center;
-  /* text-align: center; */
   width:100%;
   display: flex;
   gap: 1rem;

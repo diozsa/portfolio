@@ -3,24 +3,42 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle="The Developer"
 ---
 <BaseLayout pageTitle={pageTitle}>
-	<p>
-		<br>
-		Hello, I'm Dan Iozsa, a software engineer based in Phoenix, Arizona.
-	</p>
-	<p>
-		Welcome to my personal space - a slightly overengineered website that I built with <a href="https://astro.build/" target="_blank" style="text-decoration: none; color: rgb(136, 64, 64)">Astro </a>.
-		Opting to develop this site myself provided an opportunity to explore a new frontend architecture, enhancing my skills in the process.
-	</p>
-	<p>
-		With a background in Electrical Engineering, my journey has been marked by a consistent passion for coding.
-		I'm a technology enthusiast with a curious and detail-oriented mind. I find joy in the process of writing code, debugging, and continuously challenging myself to learn and grow.
-		Software development, for me, is the art of transforming ideas into functional products that bring value to end-users.
-	</p>
-	<p>
-		Beyond the world of programming, I embrace the open road on my motorcycle, embarking on journeys across the US with my wife.
-		Whether it's camping in the wild, cooking near the tent, exploring new trails and capturing the beauty of nature through my camera, 
-		these adventures are my ideal way of unwinding and finding inspiration. What else? Birdwatching, running, playing bass, PC gaming.
-	</p>
+	<!-- <div style="display:flex; align-items: flex-start;"> -->
+	<div class="index-page-container">
+		<img src="/portfolio_portrait.jpg" alt="Picture of self near motorcycle with rocky background" class="profile-img">
+		
+		<div style="flex: 1;">
+			<p>
+				Hello, I'm Dan Iozsa, a software engineer based in Phoenix, Arizona.
+			</p>
+			<p>
+				Welcome to my personal space - a slightly overengineered website that I built with
+				<a href="https://astro.build/" target="_blank" style="text-decoration: none; color: rgb(136, 64, 64)">Astro</a>.
+				Opting to develop this site myself provided an opportunity to explore a new frontend architecture, enhancing my skills in the process.
+			</p>
+			<p>
+				With a background in Electrical Engineering, my journey has been marked by a consistent passion for coding.
+				I'm a technology enthusiast driven by curiosity. I find joy in the process of writing code, debugging, and continuously challenging myself to learn and grow.
+				Software development, for me, is the art of transforming ideas into functional products that bring value to end-users.
+			<p>
+				I specialize in full-stack development encompassing frontend technologies like React and Astro, backend frameworks like Node.js / Express.js and
+				DB management with SQL (DDL, DML) for PostgreSQL.
+				In addition, I have expertise in Python with Flask and SQLAlchemy, coupled with competence in JavaScript, jQuery, Bootstrap, and HTML.	
+			</p>
+			</p>
+			<p>
+				Beyond the world of programming, I embrace the open road on my motorcycle, embarking on journeys across the US with my wife.
+				Whether it's camping in the wild, cooking near the tent, exploring new trails and capturing the beauty of nature through my camera, 
+				these adventures are my ideal way of unwinding and finding inspiration. What else? Birdwatching, running, playing bass, PC gaming.
+			</p>
+			
+			
+	</div>
+	
+	</div>
+	
+	
+
 
 </BaseLayout>
 

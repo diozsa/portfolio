@@ -17,7 +17,7 @@ const pageTitle = "The Vault";
           <h2>{proj.frontmatter.title}</h2>
           <h3>{proj.frontmatter.description}</h3>
           <p>
-            <a href={proj.frontmatter.url}>
+            <a href={proj.frontmatter.url} target="_blank"> 
               <img src={proj.frontmatter.image.url} alt={proj.frontmatter.image.alt}>
             </a>
             <a href={proj.url} class="link-button">Dive Deeper</a>
@@ -25,16 +25,6 @@ const pageTitle = "The Vault";
           </p>
         </div>
       ))}   
-
-      <!--
-        <a href={proj.frontmatter.url}>
-        Instead of
-        <a href="/projects/weather/">Weather App</a>
-        <a href="/projects/space/">NASA SpaceEx App</a>
-
-        "padding: 10px;  background-color: #C9ADA7; color: #22223B; border: 1px solid;
-            border-radius: 4px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 2em auto; cursor: pointer;"
-      -->
   </div>
 </BaseLayout>
 

@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Weather App'
 pubDate: 2023-04-03
-description: 'A weather service application like no other.'
+description: 'Global Weather: Real-Time Forecasts'
 author: 'Daniel Iozsa'
 image:
     # url: '/src/static/images/weather.jpg'
