@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-// import {Content} from '../pages/projects/weather.md'
 
 const allProjects = await Astro.glob('../pages/projects/*.md');
 const pageTitle = "The Vault";
@@ -11,7 +10,9 @@ const pageTitle = "The Vault";
     <br>
     Feel free to experiment with them and delve into the code on GitHub.
   </p>
+  
   <div class="project-container">
+    <!-- mapping through every md file content from projects folder -->
       {allProjects.map((proj) => (
         <div class="project">
           <h2>{proj.frontmatter.title}</h2>

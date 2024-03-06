@@ -58,11 +58,6 @@ body {
     /* Center the content horizontally */
 }
 
-/* a {
-  color: #007bff;
-} */
-
-
 .info {
   padding-left: 7rem;
     padding-right: 7rem;
@@ -101,11 +96,7 @@ h1 {
   align-items: flex-start;
   /* Align items to the start */
   margin-bottom: 1rem;
-  /* Remove margin-bottom */
-  /* padding-left: 0; */
-  /* Remove left padding */
-  /* padding-right: 0; */
-  /* Remove right padding */
+
 }
 
 .project-container {
@@ -162,10 +153,6 @@ h1 {
   margin-bottom: 10px;
   background-color: #ff9776;
 }
-
-/* nav {
-  margin: 0.1rem 0;
-} */
 
 .nav-links {
   width: 100%;

@@ -4,8 +4,7 @@ import BaseLayout from './BaseLayout.astro';
 const { frontmatter } = Astro.props;
 ---
 <BaseLayout pageTitle={frontmatter.title}>
-<!-- <p>Written by {frontmatter.author}</p> -->
-<!-- <p>{frontmatter.description}</p> -->
+
 <h3>Inside the App: A Closer Look</h3>
 <slot />
 <a href={frontmatter.github} target="_blank" class="github-button">Source Code</a>
