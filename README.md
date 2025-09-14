@@ -10,6 +10,17 @@ npm create astro@latest -- --template minimal
 
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
+## 🚀 Project Stack
+
+The source code is composed of JSX-like components (HTML, CSS and JavaScript) and markdown files. Astro does the magic behind the scene
+      through a process called hydration, transforming these components and markdown files into static HTML at build time.
+      It also provides data binding capabilities, allowing to pass data (props) from the JSX components to markdown files and vice versa.
+
+This site's GitHub repo is connected to a hosting service via a CI/CD pipeline. When a change is detected on the repo's master branch,
+      GitHub sends a webhook payload to the host provider. This in turn triggers a new build process for the website.
+      Once the build process completes successfully, the built assets are deployed to a CDN, then the live version of the website is updated automatically
+      with the newly built assets.
+      
 ## 🚀 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
