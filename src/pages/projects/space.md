@@ -8,7 +8,8 @@ image:
     url: '/space.jpg'
     alt: 'Homepage image for Space App.'
 tags: ["astro", "nasa", "space", "app", "python"]
-url: 'https://iozsa-space-app.herokuapp.com/'
+# url: 'https://iozsa-space-app.herokuapp.com/'
+url: 'https://space.danlabs.dev/'
 github: 'https://github.com/diozsa/Capstone1-Space-app'
 ---
 
